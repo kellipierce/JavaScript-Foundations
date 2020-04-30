@@ -135,13 +135,7 @@ function totalMonthlyHousingCost(p,i,y, yearlyPropertyTax, yearlyHomeInsurance, 
 /* 🏡 Explore using `window.prompt()` to allow a user to input parameters in the browser */
 
 // button to call this (in html): <button onclick="promptMortgageCalculator()">Calculate Mortgage Payment</button>
-function promptMortgageCalculator() {
-    var p = prompt("Please enter the principle amount: ","");
-    var i = prompt("Please enter the interest rate: ","");
-    var y = prompt("Please enter the term: ","");
 
-    alert("Your monthly mortgage payment will be $" + Math.round(mortgageCalculator(p,i,y)));	
-}
 
 
 /* 🏡  Refactor your `variableInterestRate()` function to accept an array of interest rates (make sure to copy and paste as to not lose your work!) */
@@ -163,9 +157,8 @@ function variableInterestRateArray(p,interestList,y){
 
 //task 5:
 console.log("Task 5 demonstration: ");
-variableInterestRate(200000, 0.05, 30);
+variableInterestRate(200000, 0.04, 30);
 
-/// stretch goal 3:
-console.log("Stretch 3 demonstration: ");
+console.log("Final stretch demonstration: ");
 var myList = [0.04,0.06,0.08, 0.10, 0.11];
 variableInterestRateArray(200000,myList,30);
